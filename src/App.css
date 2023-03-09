@@ -1,9 +1,94 @@
-.container {
+.container,
+.subcontainer {
     padding: 1rem;
     width: 80vw;
-    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.container {
+    min-height: 70vh;
+    row-gap: 2rem;
+}
+
+.title {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload {
+    border: 2px dashed #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    transition: 0.15s;
+}
+
+.upload:hover {
+    border-color: #3385ff;
+}
+
+.button {
+    background-color: #3385ffaa;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: 0.15s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #3385ff;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: fit-content;
+    padding: 1rem;
+    background-color: #3385ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.link {
+    text-decoration: underline;
+    transition: 0.15s;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .container,
+    .subcontainer {
+        width: 90vw;
+    }
 }
